@@ -1,0 +1,41 @@
+Londinium = {
+	name = "Londinium"
+	culture = "romano_briton"
+	dynasty_splendor_level = 2
+}
+gerontius = {
+	name = "Gerontius"
+	culture = "romano_briton"
+	dynasty_splendor_level = 2
+}
+attalus ={
+	name = "Attalus"
+	culture = "roman"
+	dynasty_splendor_level = 2
+}
+dynn_jovinus ={
+	name = "dynn_Jovinus"
+	culture = "Romano_Gallic"
+	dynasty_splendor_level = 2
+}
+dynn_hippo = {
+	name = "dynn_Hippo"
+	culture = "african_romance"
+	dynasty_splendor_level = 2
+}
+dynn_tripolitania = {
+	name = "dynn_Tripolitania"
+	culture = "roman"
+	dynasty_splendor_level = 2
+}
+#394 bookmark
+eugenius = {
+	name = "Eugenius"
+	culture = "roman"
+	dynasty_splendor_level = 3
+}
+arbogast = {
+	name = "Arbogast"
+	culture = "frankish"
+	dynasty_splendor_level = 2
+}
