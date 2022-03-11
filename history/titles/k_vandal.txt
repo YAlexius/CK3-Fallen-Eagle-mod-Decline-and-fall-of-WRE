@@ -1,0 +1,6 @@
+k_vandals = {
+	409.6.1 ={
+		holder = 998001 #Gunderic
+		government = tribal_government
+	}
+}

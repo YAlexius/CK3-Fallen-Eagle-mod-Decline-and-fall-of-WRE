@@ -1,0 +1,476 @@
+eugenius01 = { #Flavius Eugenius, Western Roman Emperor 392-394
+	dynasty = eugenius
+	name= "Flavius"
+	religion="hellenic_pagan" #Christian in fact, but restored the pagan Temple of Venus and Rome and restored the Altar of Victory.
+	culture="roman"
+	trait = education_learning_4
+	360.1.1 ={
+		birth = yes
+	}
+	391.6.1 ={
+		effect = {
+			set_relation_friend = character:arbogast_mm 
+		}
+	}
+	394.9.7 ={
+		death = {
+			death_reason = death_execution
+			killer = 70534 #Theodosius I
+		}
+	}
+}
+arbogast_mm = { #Arbogastes or Arbogast (died 8 September 394) was a Roman army officer of Frankish origin.
+	dynasty = arbogast
+	name= "Flavius"
+	religion="hellenic_pagan"
+	culture="frankish"
+	trait = education_martial_4
+	359.12.2 ={
+		birth = yes
+	}
+	391.6.1 ={
+		employer = valentianic_04
+	}
+	392.8.22 ={
+		employer = eugenius01
+	}
+	394.9.8 ={
+		death = {
+			death_reason = death_execution
+			killer = 70534 #Theodosius I
+		}
+	}
+}
+valentianic_04 = {
+	name = "Valentinianus"
+	# Flavius Valentinianus Invictus Augustus
+	dynasty = valentianic
+	religion = "arianism" # Arian
+	culture = "roman"
+	trait = trusting
+	trait = education_stewardship_1
+	father = valentianic_01
+	mother = constantinian_01
+	371.7.2 = {
+		birth = yes
+	}
+	391.6.1 = {
+		effect = {
+			set_relation_rival = character:arbogast_mm # Power Struggle
+		}
+	}
+	392.5.15 = {
+		death = {
+			death_reason = death_murder
+			killer = arbogast_mm # Arbogast the Frank 
+		}
+	}
+}
+#=================================================================================================
+
+gerontius_generel = { #magister militum of usurper constantinus
+	dynasty = gerontius
+	name= "Flavius"
+	religion="chalcedonian"
+	culture="romano_briton"
+	trait = education_martial_4
+	365.1.1 = {
+		birth = yes
+	}
+	407.1.1 = {
+		employer = BUsuprer_03
+	}
+	409.5.1 = {
+		employer = usurper_maximus_hispania
+	}
+	411.12.1 = {
+		death = yes
+	}
+}
+usurper_maximus_hispania = { #Maximus of Hispania
+	dynasty = gerontius
+	name = "Maximus"
+	dna = bookmark_usurper_maximus_hispania
+	religion="chalcedonian"
+	culture="romano_briton"
+	trait = education_martial_2
+	father = gerontius_generel #magister militum of usurper constantinus
+	390.1.1 = {
+		birth = yes
+	}
+	409.6.1 ={
+		add_pressed_claim = k_aquitaine
+		add_pressed_claim = k_france
+		add_pressed_claim = e_western_roman_empire
+		effect ={
+			create_alliance = {
+				target = 998001
+			}
+		}
+	}
+	422.1.1 = {
+		death = yes
+	}
+}
+
+BUsuprer_03 = {
+	name = "Constantinus" # Constantinus the usurper
+	dynasty = Londinium
+	religion = "chalcedonian"
+	culture = "romano_briton"
+	dna = bookmark_usurper_constantinus
+	trait = education_martial_4
+	trait = strategist
+	trait = brave 
+	trait = arrogant
+	374.1.1 = {
+		birth = yes
+	}
+	407.1.1 = {
+		add_pressed_claim = e_western_roman_empire
+		add_pressed_claim = k_portugal
+	}
+	411.9.18 = {
+		death = yes
+	}
+}
+
+theodosius_the_second = {
+	name = "Theodosius"
+	# Theodosius II
+	dna = bookmark_empire_theodosius_the_second
+	dynasty = 1022191
+	martial = 9
+	diplomacy = 6
+	intrigue = 0
+	learning = 20
+	stewardship = 12
+	religion = "chalcedonian"
+	culture = "roman"
+	trait = humble
+	trait = education_learning_2
+	trait = born_in_the_purple
+	father = 70519 #Flavius Arcadius Augustus
+	mother = 930551279
+	401.4.10 = {
+		birth = yes
+	}
+	450.7.28 = {
+		death = yes
+	}
+}
+thermantia_daughter_of_stilicho= { #Thermantia Stilicho
+	name= "Thermantia"
+	female = yes
+	dynasty = 1022191
+	religion="chalcedonian"
+	culture="roman"
+	father = 900062 #Stilicho
+	mother = 900065
+	390.1.1 = {
+		birth = yes
+	}
+	408.1.1 = {
+		add_spouse = 145227
+	}
+	415.1.1 = {
+		death = yes
+	}
+}
+900062 = { #Romagna
+	name= "Flavius"
+	male = yes
+	dynasty=410
+	dna = flavius_stilicho
+	religion="chalcedonian"
+	culture="roman"
+	father = 409ce012
+	trait = brave
+	trait = ambitious
+	trait = gregacious
+	359.1.1 = {
+		birth = yes
+		effect = {
+			add_character_flag = has_scripted_appearance
+		}
+	}
+	384.1.1 = {
+		add_spouse = 900065
+	}
+	408.8.22 = {
+		death = {
+			death_reason = death_execution
+			killer = 145227 # Flavius Honorius Augustus
+		}
+	}
+}
+
+409ce0003 = { #Olympius who killed stilicho
+	name = "Olympius"
+	religion="chalcedonian"
+	culture="roman"
+	360.1.1 = {
+		birth = yes
+	}
+	411.1.1 = {
+		death = yes
+	}
+}
+#998001 = Gunderic Leader of Vandals who invades Rome since 406
+
+409ce0004 ={ #Son of Constantinus the usurper
+	name = "Constans"
+	dynasty = Londinium
+	religion="chalcedonian"
+	culture="romano_briton"
+	father = BUsuprer_03
+	390.1.1= {
+		birth = yes
+	}
+}
+409ce0005 ={ #Son of Constantinus the usurper
+	name = "Julian"
+	dynasty = Londinium
+	religion="chalcedonian"
+	culture="romano_briton"
+	father = BUsuprer_03
+	395.1.1= {
+		birth = yes
+	}
+}
+409ce006 = { #Theodosian family member
+ 	name = "Theodosiolus"
+	religion="chalcedonian"
+	dynasty = 1022191
+	father = theodosian_007
+	culture="roman"
+	385.1.1= {
+		birth = yes
+	}
+}
+409ce007 = { #Theodosian family member
+ 	name = "Lagodius"
+	religion="chalcedonian"
+	father = theodosian_007
+	dynasty = 1022191
+	culture="roman"
+	380.1.1= {
+		birth = yes
+	}
+}
+409ce799 = { #Theodosian family member
+ 	name = "Honorius"
+	religion="chalcedonian"
+	father = theodosian_007
+	dynasty = 1022191
+	culture="roman"
+	379.1.1= {
+		birth = yes
+	}
+}
+409ce800 ={
+	name ="Jovinianus"
+	religion="chalcedonian"
+	culture="roman"
+	383.2.5= {
+		birth = yes
+	}
+}
+409ce801 ={
+	name ="Marcellinus"
+	religion="chalcedonian"
+	culture="african_romance"
+	384.5.1= {
+		birth = yes
+	}
+}
+409ce802 ={
+	name ="Gratian"
+	religion="chalcedonian"
+	culture="roman"
+	384.5.1= {
+		birth = yes
+	}
+}
+409ce803 ={
+	name ="Gerontius"
+	religion="chalcedonian"
+	culture="roman"
+	360.5.1= {
+		birth = yes
+	}
+}
+409ce804 ={
+	name = "Marcus"
+	religion="chalcedonian"
+	culture="roman"
+	377.12.1= {
+		birth = yes
+	}
+}
+409ce805 ={
+	name = "Flavius"
+	religion="chalcedonian"
+	culture="roman"
+	387.12.1= {
+		birth = yes
+	}
+}
+409ce008 ={ #Priscus the Usurper Proclaimed by Alaric
+	name = "Priscus"
+	religion="hellenic_pagan"
+	culture="roman"
+	dynasty = attalus
+	dna = bookmark_usurper_attalus
+	376.1.1= {
+		birth = yes
+	}
+	409.6.1={
+		add_pressed_claim = e_western_roman_empire
+		employer = 999103
+	}
+	416.12.1= {
+		death = yes
+	}
+}
+999103 ={ #Alaric
+	409.6.1={
+		effect={
+			add_hook ={
+				target = character:409ce008
+				type = manipulation_hook
+			}
+		}
+	}
+}
+145227 = { # Flavius Honorius Augustus
+	404.1.3 = {
+		effect ={
+			set_realm_capital = c_ravenna
+		}
+	}
+}
+409ce011 ={ #Sebastian and Jovinus's father
+	name = "Septimius"
+	religion="chalcedonian"
+	culture="Romano_Gallic"
+	dynasty = dynn_jovinus
+	352.7.1= {
+		birth = yes
+	}
+	406.12.31= {
+		death = {
+			death_reason = death_murder
+		}
+	}
+}
+409ce009 ={ #Jovinus, a Gallo-Roman senator and claimed to be Roman Emperor (411–413 AD).
+	name = "Jovinus"
+	religion="chalcedonian"
+	culture="Romano_Gallic"
+	dynasty = dynn_jovinus
+	trait = education_dioplomacy_3
+	dna = bookmark_usurper_jovinus
+	father = 409ce011
+	380.5.1= {
+		birth = yes
+	}
+	409.6.1={
+		add_pressed_claim = e_western_roman_empire
+		add_pressed_claim = k_france
+	}
+	413.12.1= {
+		death = {
+			death_reason = death_execution
+			killer = 145227 # Flavius Honorius Augustus
+		}
+	}
+}
+409ce010 ={ #Sebastian, Jovinus's brother and co-emperor
+	name = "Sebastian"
+	religion="chalcedonian"
+	culture="Romano_Gallic"
+	dynasty = dynn_jovinus
+	father = 409ce011
+	383.5.1= {
+		birth = yes
+	}
+	413.12.1= {
+		death = {
+			death_reason = death_execution
+			killer = 145227 # Flavius Honorius Augustus
+		}
+	}
+}
+
+409ce012 = { #Stilicho's father
+	name = "Flavius"
+	dynasty = 410
+	religion ="chalcedonian"
+	culture ="roman"
+	320.5.1 = {
+		birth = yes
+	}
+	385.7.2 = {
+		death = yes
+	}
+}
+
+409ce013 = { #Stilicho's sister
+	name = "Eudoxia"
+	female = yes
+	father = 409ce012
+	religion ="chalcedonian"
+	culture ="roman"
+	dynasty = 410
+	366.4.1 = {
+		birth = yes
+	}
+	385.6.2 = {
+		add_spouse = 409ce014
+	}
+	408.12.31 = {
+		death = {
+			death_reason = death_execution
+			killer = 145227 # Flavius Honorius Augustus
+		}
+	}
+}
+
+409ce014 = { #Historical: Bathanarius, brother-in-law of Stilicho, Comes Africa 401-408
+	name = "Bathanarius"
+	religion ="chalcedonian"
+	culture ="roman"
+	dynasty = dynn_hippo
+	365.1.1 = {
+		birth = yes
+	}
+	385.6.2 = {
+		add_spouse = 409ce013
+	}
+	408.12.31 = {
+		death = {
+			death_reason = death_execution
+			killer = 145227 # Flavius Honorius Augustus
+		}
+	}
+}
+
+heraclianus_usurper  = { #Heraclianus the Usurper of Africa
+	name = "Heraclianus"
+	religion ="chalcedonian"
+	culture ="roman"
+	dynasty = dynn_tripolitania
+	trait = ambitious
+	370.5.1 = {
+		birth = yes
+	}
+	413.3.7 = {
+		death = {
+			death_reason = death_murder
+			killer = 145227 #Honorius Augustus
+		}
+	}
+}
+
+

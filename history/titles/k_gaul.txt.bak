@@ -1,0 +1,11 @@
+## Gallic Kingdom/Gallia ############
+
+k_france = {
+	408.8.1 ={
+		holder = 0
+	}
+	408.8.24 = {
+		holder = BUsuprer_03 #Constantinus the Usurper
+		government = imperial_government
+	}
+}

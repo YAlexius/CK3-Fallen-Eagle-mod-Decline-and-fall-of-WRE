@@ -1,0 +1,53 @@
+# Constantinus the usurper
+war = {
+	name = "war_409_constantinus_the_usurper"
+	start_date = 407.2.4
+	end_date = 411.9.18
+	targeted_titles={
+		e_western_roman_empire
+	}
+	casus_belli = claim_cb
+	attackers = { BUsuprer_03 409ce0004 } #Constantinus the usurper and his son
+	defenders = { 145227 } #Honorius
+	claimant = BUsuprer_03
+}
+# Maximus of Hispania the usurper
+war = {
+	name = "war_409_maximus_the_usurper"
+	start_date = 409.6.1
+	end_date = 411.9.1
+	targeted_titles={
+		e_western_roman_empire
+	}
+	casus_belli = claim_cb
+	attackers = { usurper_maximus_hispania 998001 } #Maximus of Hispania the usurper and Gunderic
+	defenders = { 145227 } #Honorius
+	claimant = usurper_maximus_hispania
+}
+# Maximus of Hispania against Constantius
+war = {
+	name = "war_409_maximus_against_constantius"
+	start_date = 409.6.1
+	end_date = 411.9.1
+	targeted_titles={
+		k_aquitaine
+		k_france
+	}
+	casus_belli = claim_cb
+	attackers = { usurper_maximus_hispania 998001 } #Maximus of Hispania the usurper and Vandals
+	defenders = { BUsuprer_03 } #Constantinus the usurper
+	claimant = usurper_maximus_hispania
+}
+# Alaric
+war = {
+	name = "war_409_visigoth_rebellion"
+	start_date = 406.6.1
+	end_date = 411.9.1
+	targeted_titles={
+		e_western_roman_empire
+	}
+	casus_belli = claim_cb
+	attackers = { 409ce008 999103 } #Priscus and Alaric
+	defenders = { 145227 } #Honorius
+	claimant = 409ce008
+}

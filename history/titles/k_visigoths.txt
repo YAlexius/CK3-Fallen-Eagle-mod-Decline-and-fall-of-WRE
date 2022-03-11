@@ -1,0 +1,27 @@
+k_visigoths ={
+	396.1.1 ={
+		liege = "e_western_roman_empire"
+	}
+}
+## Alaric invades Italy
+d_toscana ={
+	408.8.22 ={
+		holder = 999103 #Alaric
+	}
+}
+c_firenze ={
+	408.8.22 ={
+		holder = 999103 #Alaric
+	}
+}
+d_spoleto ={
+	408.8.22 ={
+		liege = "k_visigoths"
+	}
+}
+d_ancona ={
+	409.6.1 ={
+		holder = 409ce008
+		liege = "e_western_roman_empire"
+	}
+}

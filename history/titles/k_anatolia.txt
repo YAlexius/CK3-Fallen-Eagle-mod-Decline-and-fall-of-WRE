@@ -1,0 +1,67 @@
+d_hellespontus= {
+	408.5.1 ={
+		liege = e_byzantium
+	}
+}
+d_aegean_islands= {
+	408.5.1 ={
+		liege = e_byzantium
+	}
+}
+d_thracesia= {
+	408.5.1 ={
+		liege = e_byzantium
+	}
+}
+d_frigia_pacatiana= {
+	408.5.1 ={
+		liege = e_byzantium
+	}
+}
+d_caria= {
+	408.5.1 ={
+		liege = e_byzantium
+	}
+}
+d_lycia= {
+	408.5.1 ={
+		liege = e_byzantium
+	}
+}
+d_opsikion= {
+	408.5.1 ={
+		liege = e_byzantium
+	}
+}
+d_pisidia= {
+	408.5.1 ={
+		liege = e_byzantium
+	}
+}
+d_cibyrrhaeot= {
+	408.5.1 ={
+		liege = e_byzantium
+	}
+}
+d_anatolia= {
+	408.5.1 ={
+		liege = e_byzantium
+	}
+}
+d_cappadocia= {
+	408.5.1 ={
+		liege = e_byzantium
+	}
+}
+d_charsianon= {
+	408.5.1 ={
+		liege = e_byzantium
+	}
+}
+d_ephese= {
+	408.5.1 ={
+		holder = 409ce802
+		government = imperial_government
+		liege = e_byzantium
+	}
+}

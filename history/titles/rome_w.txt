@@ -1,0 +1,323 @@
+## W Roman Empire
+k_italia_suburbicariae = {
+	408.8.22 = {
+		holder = 409ce0003
+		liege = e_western_roman_empire
+	}
+}
+k_africa = {
+	#386.1.1 = {
+		#holder = 900063
+		#liege = e_western_roman_empire
+	#}
+	398.1.1 = {
+		holder = 0
+	}
+	401.5.1 = {
+		holder = 409ce014 #Historical: Bathanarius, brother-in-law of Stilicho, Comes Africa 401-408
+		liege = e_western_roman_empire
+	}
+	408.12.31 = {
+		holder = 0
+	}
+	409.1.1 = {
+		holder = heraclianus_usurper #Heraclianus the Usurper of Africa
+	}
+}
+d_tlemcen = {
+	398.1.1 = {
+		liege = e_western_roman_empire
+	}
+	401.5.1 = {
+		liege = k_africa
+	}
+}
+d_bejaia = {
+	398.1.1 = {
+		liege = e_western_roman_empire
+	}
+	401.5.1 = {
+		liege = k_africa
+	}
+}
+d_tunis = {
+	398.1.1 = {
+		holder = 409ce801
+		liege = e_western_roman_empire
+	}
+	401.5.1 = {
+		holder = 409ce014 #Historical: Bathanarius, brother-in-law of Stilicho, Comes Africa 401-408
+	}
+	409.1.1 = {
+		holder = heraclianus_usurper #Heraclianus the Usurper of Africa
+	}
+}
+d_tripolitania = {
+	398.1.1 = {
+		liege = e_western_roman_empire
+	}
+	401.5.1 = {
+		liege = k_africa
+	}
+}
+d_kairouan = {
+	398.1.1 = {
+		liege = e_western_roman_empire
+	}
+	401.5.1 = {
+		liege = k_africa
+	}
+}
+d_kroumerie = {
+	398.1.1 = {
+		liege = e_western_roman_empire
+	}
+	401.5.1 = {
+		liege = k_africa
+	}
+}
+d_tripolitania = {
+	398.1.1 = {
+		liege = e_western_roman_empire
+	}
+	401.5.1 = {
+		liege = k_africa
+	}
+}
+d_lombardia = { ##山南高卢行省
+	392.8.22 ={
+		holder = eugenius01
+		liege = e_western_roman_empire
+	}
+	404.1.1 = {
+		holder = 900619
+		liege = e_western_roman_empire
+	}
+}
+c_ravenna ={
+	404.1.1 ={
+		holder = 145227 #Honorius
+	}
+}
+d_romagna = { ##弗拉米尼亚与皮希努姆行省，拉文纳
+	404.1.1 = {
+		set_capital_county = c_ravenna
+	}
+	404.1.2 = {
+		de_jure_liege = k_italy
+		holder = 145227 #Honorius
+	}
+}
+c_urbino= { 
+	404.1.2 = {
+	holder = 145227 #Honorius
+	}
+}
+c_casentino= { 
+	404.1.2 = {
+	holder = 145227 #Honorius
+	}
+}
+c_cremona = { 
+	404.1.1 = {
+		holder = 409ce800
+		liege = e_western_roman_empire
+	}
+}
+c_brescia= { 
+	404.1.1 = {
+		holder = 409ce800
+		liege = e_western_roman_empire
+	}
+}
+e_western_roman_empire = {
+	392.8.22 ={
+		holder = eugenius01
+		government = imperial_government
+	}
+	404.1.1 = {
+		set_capital_county = c_ravenna
+	}
+}
+
+## Aquatine/Septum Provinciae ############
+
+k_aquitaine = {
+	408.4.29 = {
+		holder = 0
+	}
+	408.5.1 = {
+		holder = BUsuprer_03
+		government = imperial_government
+	}
+}	
+c_venaissin = { ##阿尔勒
+	408.5.1 = {
+		holder = BUsuprer_03
+	}
+}
+d_dauphine = { #维埃纳公国
+	408.5.1 = {
+		holder = BUsuprer_03
+	}
+}
+
+d_gascogne = { ##第二阿基坦
+	408.5.1 ={
+		liege = k_aquitaine
+	}
+}
+d_burgundy ={ ##第一卢格敦
+	408.5.1 ={
+		liege = k_aquitaine
+	}
+}
+c_viennois= { ##维埃纳
+	408.5.2 = {
+		holder = 409ce0004
+		liege = k_aquitaine
+	}
+}
+c_valentinois= {
+	408.5.1 = {
+	holder = BUsuprer_03
+	}
+}
+c_viviers= {
+	408.5.1 = {
+	holder = BUsuprer_03
+	}
+}
+
+## Gallic Kingdom/Gallia ############
+
+k_france = {
+	408.8.1 ={
+		holder = 0
+	}
+	408.8.24 = {
+		holder = BUsuprer_03 #Constantinus the Usurper
+		government = imperial_government
+	}
+	411.9.18 ={ 
+		holder = 409ce009 #Jovinus the Usurper
+		government = imperial_government
+	}
+}
+c_mainz ={ #美因茨
+	409.6.1 = {
+		holder = 409ce009
+	}
+}
+d_alsace = { #第一日耳曼尼亚
+	409.6.1 ={
+		holder = 409ce009 
+		government = imperial_government
+		liege = k_france
+	}
+}
+c_trier = { #特里尔
+	409.6.1 ={
+		holder = 409ce010 
+	}
+}
+d_upper_lorraine = { #下洛林、第一贝尔伽
+	409.6.1 ={
+		holder = 409ce010 
+		government = imperial_government
+		liege = k_france
+	}
+}
+
+
+## Hispania ############
+
+k_portugal = {
+	#395.1.1 = {
+		#holder = 900071
+		#liege = "e_western_roman_empire"
+		#government = imperial_government
+		#de_jure_liege = e_western_roman_empire
+	#}
+	409.5.1 = {
+		holder = 0
+	}
+	409.6.1 = {
+		holder = usurper_maximus_hispania
+		government = imperial_government
+	}
+}
+d_badajoz = {
+	409.6.1 = {
+		holder = usurper_maximus_hispania
+	}
+}
+c_merida = {
+	409.6.1 = {
+		holder = usurper_maximus_hispania
+	}
+}
+## Vandals invades Hispania
+d_galicia ={
+	409.6.1= {
+		holder = 998001 #King of Vandals, Gunderic
+	}
+}
+c_porto ={
+	409.6.1= {
+		holder = 998001
+	}
+}
+
+
+######Britain
+k_britannia = {
+	#200.1.1 = {
+		#government = imperial_government
+		#de_jure_liege = "e_western_roman_empire"
+	#}
+	#320.1.1 = {
+		#holder = Prydain_02 #Eudaf
+		#liege = "e_western_roman_empire"
+	#}
+	#383.1.1 = {
+		#holder = Wleding_001 #Magnus Maximus
+	#}
+	#388.8.28 = {
+		#holder = BVicarius_01 #Chrysanthus Vicarius Britannica
+		#liege = "e_western_roman_empire"
+	#}
+	406.5.30 ={
+		holder = 0
+	}
+	#406.6.1 = {
+		#holder = BUsuprer_01 #Marcus the Usurper
+	#}
+	#406.10.1 = {
+		#holder = BUsuprer_02 #Gratianus the Usurper
+	#}
+	407.2.4 = {
+		#holder = BUsuprer_03 #Constantinus the Usurper
+		government = imperial_government
+	}
+}
+c_middlesex= { 
+	408.5.1 = {
+		holder = BVicarius_01
+	}
+}
+c_hertfordshire= { 
+	408.5.1 = {
+		holder = BVicarius_01
+	}
+}
+d_bedford ={
+	408.4.31 ={
+		holder = 0
+	}
+	408.5.1 = {
+		holder = BVicarius_01
+		government = imperial_government
+		liege = k_britannia
+	}
+}

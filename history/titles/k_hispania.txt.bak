@@ -1,0 +1,38 @@
+## Hispania ############
+
+k_portugal = {
+	#395.1.1 = {
+		#holder = 900071
+		#liege = "e_western_roman_empire"
+		#government = imperial_government
+		#de_jure_liege = e_western_roman_empire
+	#}
+	409.5.1 = {
+		holder = 0
+	}
+	409.6.1 = {
+		holder = usurper_maximus_hispania
+		government = imperial_government
+	}
+}
+d_badajoz = {
+	409.6.1 = {
+		holder = usurper_maximus_hispania
+	}
+}
+c_merida = {
+	409.6.1 = {
+		holder = usurper_maximus_hispania
+	}
+}
+## Vandals invades Hispania
+d_galicia ={
+	409.6.1= {
+		holder = 998001 #King of Vandals, Gunderic
+	}
+}
+c_porto ={
+	409.6.1= {
+		holder = 998001
+	}
+}
