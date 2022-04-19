@@ -1,9 +1,14 @@
 ﻿l_simp_chinese:
+##Added names
  Olympius:0 "奥林皮乌斯"
  Thermantia:0 "狄尔曼提雅"
- Theodosiolus:0 "狄奥多西路斯"
- Lagodius:0 "拉戈狄乌斯"
- Jovinianus:0 "约维尼安努斯"
  Jovinus:0 "约维努斯"
- Bathanarius:0 "巴塔纳里乌斯"
- Heraclianus:0 "赫拉克利安努斯"
+ Heraclianus:0 "赫拉克利亚努斯"
+
+##Mainmod Unloc names
+
+ Coillus:0 "科伊卢斯"
+ Goar:0 "戈阿尔"
+ Antsecg:0 "安特塞"
+ Chrysanthus:0 "克律山托斯"
+ Gesecg:0 "格塞克"

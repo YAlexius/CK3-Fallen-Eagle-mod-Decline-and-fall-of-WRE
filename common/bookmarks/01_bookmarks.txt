@@ -1,0 +1,349 @@
+bm_394_civilwar = { #冷河战役
+	start_date = 394.9.1
+	is_playable = no
+	recommended = no
+	#character = {#Flavius Eugenius, Western Roman Emperor 392-394 ID:eugenius01
+	#	name = "bookmark_usurper_eugenius"
+	#	dynasty = eugenius
+	#	dynasty_splendor_level = 3
+	#	type = male
+	#	birth = 360.1.1
+	#	title = e_western_roman_empire
+	#	government = imperial_government
+	#	religion = "hellenic_pagan"
+	#	culture = "roman"
+	#	difficulty = "BOOKMARK_CHARACTER_DIFFICULTY_MEDIUM"
+	#	history_id = eugenius01
+	#	position = { 550 430 }
+#
+#		animation = personality_bold
+#		}
+#	character = {#Arbogast id:arbogast_mm
+#		name = "bookmark_mm_arbogast"
+#		dynasty = arbogast
+#		dynasty_splendor_level = 3
+#		type = male
+#		birth = 360.1.1
+#		title = k_gallia
+#		government = imperial_government
+#		religion="hellenic_pagan"
+#		culture="frankish"
+#		difficulty = "BOOKMARK_CHARACTER_DIFFICULTY_MEDIUM"
+#		history_id = eugenius01
+#		position = { 200 430 }
+#
+##		animation = personality_bold
+#		}
+#	character = {#Theodosius I ID:70534
+#		name = "bookmark_emperor_theodosius_the_great"
+#		dynasty = 1022191 
+#		dynasty_splendor_level = 5
+#		type = male
+#		birth = 347.1.11
+#		title = e_byzantium
+#		government = imperial_government
+#		religion = "chalcedonian"
+#		culture = "roman"
+#		difficulty = "BOOKMARK_CHARACTER_DIFFICULTY_MEDIUM"
+#		history_id = 70534
+#		position = { 1000 550 }
+#
+#		animation = personality_honorable
+#		}
+}
+
+
+bm_409_usurper = {
+	start_date = 409.9.1
+	is_playable = yes
+	recommended = yes
+	default = yes
+
+	character = {#Constantinus the usurper(Western Rome) ID:constantinus_01
+		name = "bookmark_usurper_constantinus"
+		dynasty = constantinus_dynasty
+		dynasty_splendor_level = 2
+		type = male
+		birth = 374.1.1
+		title = k_septem_provinciae
+		government = imperial_government
+		religion = "nicene"
+		culture = "britano_roman"
+		difficulty = "BOOKMARK_CHARACTER_DIFFICULTY_HARD"
+		history_id = constantinus_01
+		position = { 400 380 }
+
+		animation = personality_bold
+		}
+	character = {#Maximus of Hispania the usurper(Western Rome) ID:usurper_maximus_hispania
+		name = "bookmark_usurper_maximus_hispania"
+		dynasty = gerontius
+		dynasty_splendor_level = 2
+		type = male
+		birth = 390.1.1
+		title = k_hispania
+		government = imperial_government
+		religion = "nicene"
+		culture = "britano_roman"
+		difficulty = "BOOKMARK_CHARACTER_DIFFICULTY_HARD"
+		history_id = usurper_maximus_hispania
+		position = { 250 550 }
+
+		animation = personality_honorable
+		}
+	character = {# Emperor Honorius (Western Rome) ID: 145227
+		name = "bookmark_empire_honorius_409"
+		dynasty = 1022191
+		dynasty_splendor_level = 5
+		type = male
+		birth = 384.9.9
+		title = e_western_roman_empire
+		government = imperial_government
+		religion="nicene"
+		culture="roman"
+		difficulty = "BOOKMARK_CHARACTER_DIFFICULTY_HARD"
+		history_id = 145227
+		position = { 700 350 }
+
+		animation = personality_bold
+		}
+	character = { # Emperor Theodosius II (Eastern Rome) ID: theodosian_015
+		name = "bookmark_empire_theodosius_the_second"
+		dynasty = 1022191
+		dynasty_splendor_level = 5
+		type = male
+		birth = 401.4.10
+		title = e_byzantium
+		government = imperial_government
+		religion="nicene"
+		culture="roman"
+		difficulty = "BOOKMARK_CHARACTER_DIFFICULTY_MEDIUM"
+		history_id = theodosian_015
+		position = { 1000 550 }
+
+		animation = personality_content
+		}
+	character = {#Priscus Attalus) ID:priscus_attalus_usurper
+		name = "bookmark_usurper_attalus"
+		dynasty = attalus
+		dynasty_splendor_level = 2
+		type = male
+		birth = 376.1.1
+		title = d_ancona
+		government = imperial_government
+		religion = "hellenic_pagan"
+		culture = "roman"
+		difficulty = "BOOKMARK_CHARACTER_DIFFICULTY_HARD"
+		history_id = priscus_attalus_usurper
+		position = { 650 625 }
+
+		animation = personality_content
+		}
+	character = {#jovinus) ID:jovinus_the_usurper
+		name = "bookmark_usurper_jovinus"
+		dynasty = dynn_jovinus
+		dynasty_splendor_level = 2
+		type = male
+		birth = 380.5.1
+		title = d_germania_prima
+		government = imperial_government
+		religion = "nicene"
+		culture = "gallo_roman"
+		difficulty = "BOOKMARK_CHARACTER_DIFFICULTY_HARD"
+		history_id = jovinus_the_usurper
+		position = { 400 130 }
+
+		animation = personality_honorable
+		}
+	character = {#Heraclianus of Africa) ID:heraclianus_usurper
+		name = "bookmark_usurper_heraclianus"
+		dynasty = dynn_tripolitania
+		dynasty_splendor_level = 2
+		type = male
+		birth = 370.5.1
+		title = d_tripolitania
+		government = imperial_government
+		religion = "nicene"
+		culture = "roman"
+		difficulty = "BOOKMARK_CHARACTER_DIFFICULTY_HARD"
+		history_id = heraclianus_usurper
+		position = { 400 800 }
+
+		animation = personality_content
+		}
+}
+
+bm_409_migrator = {
+	start_date = 409.9.1
+	is_playable = yes
+	recommended = no
+
+	character = {#999600 #Hermeric, King of Suebian
+		name = "bookmark_migrator_suebi"
+		dynasty = 99996000
+		dynasty_splendor_level = 2
+		type = male
+		birth = 375.1.1
+		title = k_suebi
+		government = tribal_government
+		religion = "norse_pagan"
+		culture = "swabian"
+		difficulty = "BOOKMARK_CHARACTER_DIFFICULTY_MEDIUM"
+		history_id = 999600
+		position = { 600 200 }
+
+		animation = personality_honorable
+	}
+	character = {# alan_01 #Respendial, King of Alans
+		name = "bookmark_migrator_alan_01"
+		dynasty = 99995001
+		dynasty_splendor_level = 2
+		type = male
+		birth = 365.1.1
+		title = k_alani
+		government = tribal_government
+		religion = "scythian_pagan"
+		culture = "alan"
+		difficulty = "BOOKMARK_CHARACTER_DIFFICULTY_MEDIUM"
+		history_id = alan_01
+		position = { 800 400 }
+
+		animation = personality_bold
+	}
+	character = { # alan_12 #Goar (born before 390, died between 446 and 450) was a leader of the Alans in 5th-century Gaul
+		name = "bookmark_migrator_alan_12"
+		dynasty = 0
+		dynasty_splendor_level = 0
+		type = male
+		birth = 372.1.1
+		title = d_lugdunensis_senonia
+		government = tribal_government
+		religion = "scythian_pagan"
+		culture = "alan"
+		difficulty = "BOOKMARK_CHARACTER_DIFFICULTY_MEDIUM"
+		history_id = alan_12
+		position = { 1000 600 }
+
+		animation = personality_content
+	}
+	character = {#994001 #Gundemar, King of Burgundy
+		name = "bookmark_migrator_burgundy"
+		dynasty = 99940000
+		dynasty_splendor_level = 2
+		type = male
+		birth = 377.1.1
+		title = k_burgundia
+		government = tribal_government
+		religion = "arianism"
+		culture = "burgundian"
+		difficulty = "BOOKMARK_CHARACTER_DIFFICULTY_MEDIUM"
+		history_id = 994001
+		position = { 1200 800 }
+
+		animation = personality_bold
+	}
+	character = { # 999103 #King Alaric of Visigoth
+		name = "bookmark_migrator_alaric"
+		dynasty = 99991000
+		dynasty_splendor_level = 2
+		type = male
+		birth = 375.1.1
+		title = k_visigoths
+		government = tribal_government
+		religion = "arianism"
+		culture = "gothic"
+		difficulty = "BOOKMARK_CHARACTER_DIFFICULTY_MEDIUM"
+		history_id = 999103
+		position = { 1400 550 }
+
+		animation = personality_bold
+	}	
+	character = {# vandals_002 Gunderic, King of Hasing Vandals
+		name = "bookmark_migrator_hasding"
+		dynasty = hasding
+		dynasty_splendor_level = 2
+		type = male
+		birth = 379.1.1
+		title = k_hasding_vandals
+		government = tribal_government
+		religion = "arianism"
+		culture = "vandal"
+		difficulty = "BOOKMARK_CHARACTER_DIFFICULTY_MEDIUM"
+		history_id = vandals_002
+		position = { 350 750 }
+
+		animation = personality_bold
+	}
+}
+bm_409_britain = {
+	start_date = 409.9.1
+	is_playable = yes
+	recommended = no
+
+	character = {# Coel Henn (Britannia Secunda) 
+		name = "bookmark_pendragon_henn"
+		dynasty = 99850006
+		dynasty_splendor_level = 2
+		type = male
+		birth = 361.1.1
+		title = d_york
+		government = imperial_government
+		religion = "celto_hellenic_syncretism"
+		culture = "britano_roman"
+		difficulty = "BOOKMARK_CHARACTER_DIFFICULTY_HARD"
+		history_id = guotepauc_02 
+		position = { 600 200 }
+
+		animation = personality_bold
+	}
+	character = {#Constantinus the usurper(Western Rome) ID:constantinus_01
+		name = "bookmark_usurper_constantinus"
+		dynasty = constantinus_dynasty
+		dynasty_splendor_level = 2
+		type = male
+		birth = 374.1.1
+		title = k_britannia
+		government = imperial_government
+		religion = "nicene"
+		culture = "britano_roman"
+		difficulty = "BOOKMARK_CHARACTER_DIFFICULTY_MEDIUM"
+		history_id = constantinus_01
+		position = { 900 550 }
+
+		animation = personality_bold
+	}
+	character = {# Emperor Honorius (Western Rome) ID: 145227
+		name = "bookmark_empire_honorius_409"
+		dynasty = 1022191
+		dynasty_splendor_level = 5
+		type = male
+		birth = 384.9.9
+		title = e_western_roman_empire
+		government = imperial_government
+		religion="nicene"
+		culture="roman"
+		difficulty = "BOOKMARK_CHARACTER_DIFFICULTY_MEDIUM"
+		history_id = 145227
+		position = { 1300 700 }
+
+		animation = personality_bold
+	}
+	character = {# King of Saxons ID:saxon_02
+		name = "bookmark_409_britain_saxon"
+		dynasty = saxon_dynasty
+		dynasty_splendor_level = 2
+		type = male
+		birth = 360.1.1
+		title = k_saxony
+		government = tribal_government
+		religion = "central_pagan"
+		culture = "old_saxon"
+		difficulty = "BOOKMARK_CHARACTER_DIFFICULTY_MEDIUM"
+		history_id = saxon_02
+		position = { 1400 250 }
+
+		animation =  schadenfreude
+	}
+}
+
+

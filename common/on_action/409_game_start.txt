@@ -1,0 +1,20 @@
+on_game_start = {
+	on_actions = {
+		409_on_game_start
+	}
+}
+409_on_game_start = {
+	effect = {
+		if = {
+			limit = {
+				current_date = 409.9.1
+			}
+			title:k_britannia.holder = {
+				trigger_event = {
+					id = 409_briton.1
+					days = 1
+				}
+			}
+		}
+	}
+}

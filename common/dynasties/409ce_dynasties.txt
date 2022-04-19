@@ -1,8 +1,4 @@
-Londinium = {
-	name = "Londinium"
-	culture = "romano_briton"
-	dynasty_splendor_level = 2
-}
+
 gerontius = {
 	name = "Gerontius"
 	culture = "romano_briton"

@@ -1,0 +1,242 @@
+namespace = 409_briton
+409_briton.1 = {
+	type = character_event
+	title = "d409_briton.1.tt"
+	desc = "d409_briton.1.desc"
+	theme = war
+	background = burning_building
+	is_triggered_only = yes
+
+	left_portrait = { #Defender
+		character = title:d_bedford.holder
+		animation = fear
+	}
+	right_portrait = { #Invader
+		character = title:k_saxony.holder
+		animation = war_attacker
+	}
+	lower_center_portrait = {
+		character = root
+		animation = personality_bold
+	}
+
+	option = {
+		name = "d409_briton.1.a" ##Stand with Britain
+		ai_chance = 45
+		title:k_britannia.holder = {
+			remove_short_term_gold = 250
+		}
+
+		title:d_york.holder = {
+			add_character_modifier = { modifier = increased_levies_modifier years = 10 }
+			add_character_modifier = { modifier = increased_castle_defense years = 10 }
+			add_opinion = {
+				target = title:k_britannia.holder
+				modifier = kept_promise
+			}
+		}
+		title:d_northumberland.holder = {
+			add_character_modifier = { modifier = increased_levies_modifier years = 10 }
+			add_character_modifier = { modifier = increased_castle_defense years = 10 }
+			add_opinion = {
+				target = title:k_britannia.holder
+				modifier = kept_promise
+			}
+		}
+		title:d_bedford.holder = {
+			add_character_modifier = { modifier = increased_levies_modifier years = 10 }
+			add_character_modifier = { modifier = increased_castle_defense years = 10 }
+			add_opinion = {
+				target = title:k_britannia.holder
+				modifier = kept_promise
+			}
+		}
+		title:d_hereford.holder = {
+			add_character_modifier = { modifier = increased_levies_modifier years = 10 }
+			add_character_modifier = { modifier = increased_castle_defense years = 10 }
+			add_opinion = {
+				target = title:k_britannia.holder
+				modifier = kept_promise
+			}
+		}
+		title:d_gloucester.holder = {
+			add_character_modifier = { modifier = increased_levies_modifier years = 10 }
+			add_character_modifier = { modifier = increased_castle_defense years = 10 }
+			add_opinion = {
+				target = title:k_britannia.holder
+				modifier = kept_promise
+				}
+		}
+	}
+	
+
+	option = {
+		name = "d409_briton.1.b" ##Stand with Britain
+		ai_chance = 10
+		custom_tooltip = "d409_briton.1.b.tt"
+		title:k_britannia.holder = {
+			remove_short_term_gold = 150
+		}
+
+		title:d_york.holder = {
+			create_title_and_vassal_change = {
+				type = independency
+				save_scope_as = change
+				add_claim_on_loss = no
+			}
+			add_opinion = {
+				target = title:k_britannia.holder
+				modifier = broke_promise
+				}
+			becomes_independent = { change = scope:change }
+			resolve_title_and_vassal_change = scope:change
+		}
+		title:d_northumberland.holder = {
+			create_title_and_vassal_change = {
+				type = independency
+				save_scope_as = change
+				add_claim_on_loss = no
+			}
+			add_opinion = {
+				target = title:k_britannia.holder
+				modifier = broke_promise
+				}
+			becomes_independent = { change = scope:change }
+			resolve_title_and_vassal_change = scope:change
+		}
+		title:d_bedford.holder = {
+			add_character_modifier = { modifier = increased_levies_modifier years = 10 }
+			add_character_modifier = { modifier = increased_castle_defense years = 10 }
+			add_opinion = {
+				target = title:k_britannia.holder
+				modifier = kept_promise
+				}
+		}
+		title:d_hereford.holder = {
+			add_character_modifier = { modifier = increased_levies_modifier years = 10 }
+			add_character_modifier = { modifier = increased_castle_defense years = 10 }
+			add_opinion = {
+				target = title:k_britannia.holder
+				modifier = kept_promise
+				}
+		}
+		title:d_gloucester.holder = {
+			add_character_modifier = { modifier = increased_levies_modifier years = 10 }
+			add_character_modifier = { modifier = increased_castle_defense years = 10 }
+			add_opinion = {
+				target = title:k_britannia.holder
+				modifier = kept_promise
+				}
+		}
+	}
+
+	option = {
+		name = "d409_briton.1.c" ##Free Britain
+		ai_chance = 45
+		custom_tooltip = "d409_briton.1.c.tt"
+
+		title:d_york.holder = {
+			create_title_and_vassal_change = {
+				type = independency
+				save_scope_as = change
+				add_claim_on_loss = no
+			}
+			add_opinion = {
+				target = title:k_britannia.holder
+				modifier = broke_promise
+				}
+			becomes_independent = { change = scope:change }
+			resolve_title_and_vassal_change = scope:change
+		}
+		title:d_northumberland.holder = {
+			create_title_and_vassal_change = {
+				type = independency
+				save_scope_as = change
+				add_claim_on_loss = no
+			}
+			add_opinion = {
+				target = title:k_britannia.holder
+				modifier = broke_promise
+				}
+			becomes_independent = { change = scope:change }
+			resolve_title_and_vassal_change = scope:change
+		}
+		title:d_bedford.holder = {
+			create_title_and_vassal_change = {
+				type = independency
+				save_scope_as = change
+				add_claim_on_loss = no
+			}
+			add_opinion = {
+				target = title:k_britannia.holder
+				modifier = broke_promise
+				}
+			becomes_independent = { change = scope:change }
+			resolve_title_and_vassal_change = scope:change
+		}
+		title:d_hereford.holder = {
+			create_title_and_vassal_change = {
+				type = independency
+				save_scope_as = change
+				add_claim_on_loss = no
+			}
+			add_opinion = {
+				target = title:k_britannia.holder
+				modifier = broke_promise
+				}
+			becomes_independent = { change = scope:change }
+			resolve_title_and_vassal_change = scope:change
+		}
+		title:d_gloucester.holder = {
+			create_title_and_vassal_change = {
+				type = independency
+				save_scope_as = change
+				add_claim_on_loss = no
+			}
+			add_opinion = {
+				target = title:k_britannia.holder
+				modifier = broke_promise
+				}
+			becomes_independent = { change = scope:change }
+			resolve_title_and_vassal_change = scope:change
+		}
+
+		destroy_title = title:k_britannia
+		add_gold = 500
+		
+		every_player = {
+			trigger_event = {
+				id = western_roman.0002
+				days = 1
+			}
+		}
+
+		random_list = {
+			15 = {
+				title:k_saxony.holder = {
+					trigger_event = {
+						id = briton.0007
+						days = 30
+					}
+				}
+			}
+			15 = {
+				title:k_frisia.holder = {
+					trigger_event = {
+						id = briton.0007
+						days = 30
+					}
+				}
+			}
+			15 = {
+				title:k_jutland.holder = {
+					trigger_event = {
+						id = briton.0007
+						days = 30
+					}
+				}
+			}
+		}
+	}
+}
+

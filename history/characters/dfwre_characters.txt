@@ -1,0 +1,712 @@
+###For 394 bookmark
+eugenius01 = { #Flavius Eugenius, Western Roman Emperor 392-394 ###Bookmark character
+	dynasty = eugenius
+	name= "Flavius"
+	religion = "hellenic_pagan" #Christian in fact, but restored the pagan Temple of Venus and Rome and restored the Altar of Victory.
+	culture = "roman"
+	dna = bookmark_usurper_eugenius
+	trait = education_learning_4
+	360.1.1 = {
+		birth = yes
+	}
+	391.6.1 = {
+		effect = {
+			set_relation_friend = character:arbogast_mm 
+		}
+	}
+	394.9.7 = {
+		death = {
+			death_reason = death_execution
+			killer = 70534 #Theodosius I
+		}
+	}
+}
+
+arbogast_mm = { #Arbogastes or Arbogast (died 8 September 394) was a Roman army officer of Frankish origin. ###Bookmark character
+	dynasty = arbogast
+	name= "Flavius"
+	religion="hellenic_pagan"
+	culture="frankish"
+	dna = bookmark_mm_arbogast
+	trait = education_martial_4
+	359.12.2 = {
+		birth = yes
+	}
+	391.6.1 = {
+		employer = valentianic_04
+	}
+	392.8.22 = {
+		employer = eugenius01
+		effect = {
+			add_hook = {
+				target = character:eugenius01
+				type = life_threat_hook
+			}
+		}
+	}
+	394.9.8 = {
+		death = {
+			death_reason = death_execution
+			killer = 70534 #Theodosius I
+		}
+	}
+}
+
+#valentianic_04 = { ##mainmod character edited in roman.txt
+#	name = "Valentinianus"
+#	# Flavius Valentinianus Invictus Augustus
+#	dynasty = valentianic
+#	religion = "arianism" # Arian
+#	culture = "roman"
+#	trait = trusting
+#	trait = education_stewardship_1
+#	father = valentianic_01
+#	mother = constantinian_01
+#	371.7.2 = {
+#		birth = yes
+#	}
+#	391.6.1 = { #Edited
+##		effect = {
+#			set_relation_rival = character:arbogast_mm # Power Struggle
+#		}
+#	}
+#	392.5.15 = { #Edited
+#		death = {
+#			death_reason = death_murder
+#			killer = arbogast_mm # Arbogast the Frank 
+#		}
+#	}
+#}
+
+###For 409 bookmark
+##994001 Gundemar, King of Burgundy
+
+constantius_the_third = { #Constantius Ⅲ
+	name = "Constantius"
+	religion = "nicene"
+	culture = "roman"
+	trait = education_martial_4
+	trait = brave
+	trait = just
+	trait = physique_bad_1
+	martial = 25
+	diplomacy = 10
+	prowess = 20
+	stewardship = 15
+	intrigue = 10
+	learning = 10
+	389.1.1 = {
+		birth = yes
+	}
+	408.8.22 = {
+		employer = 145227
+		effect = {
+			set_relation_rival = character:409ce0003
+		}
+	}
+	417.1.1 = {
+		add_spouse = 145229
+	}
+	421.9.2 = {
+		death = yes
+	}
+}
+
+gerontius_generel = { #magister militum of usurper constantinus
+	dynasty = gerontius
+	name= "Flavius"
+	religion="nicene"
+	culture="britano_roman"
+	trait = education_martial_4
+	trait = strategist
+	365.1.1 = {
+		birth = yes
+	}
+	407.1.1 = {
+		employer = BUsuprer_03
+	}
+	409.9.1 = {
+		employer = usurper_maximus_hispania
+	}
+	411.12.1 = {
+		death = {
+			death_reason = death_battle
+		}
+	}
+}
+
+#constantinus_01 = { ##mainmod character edited in britano_roman.txt ###Bookmark character
+#	name = "Claudius" # Constantinus the usurper, his son constans and iulian's code:constantinus_02 and 03
+#	religion = "nicene"
+#	culture = "britano_roman"
+#	dynasty = constantinus_dynasty
+#	dna = bookmark_usurper_constantinus #Edited
+#	trait = education_martial_4
+#	trait = strategist
+#	trait = brave 
+#	trait = arrogant
+#	374.1.1 = {
+##		birth = yes
+#	}
+#	407.1.1 = { #Edited
+#		effect = {
+#			add_unpressed_claim = title:e_western_roman_empire
+#			add_unpressed_claim = title:k_hispania 
+#		}
+#	}
+#	411.9.18 = { #Edited
+#		death = {
+#			death_reason = death_execution
+#			killer = 145227 #Honorius Augustus
+#		}
+#	}
+#}
+
+usurper_maximus_hispania = { #Maximus of Hispania ###Bookmark character
+	dynasty = gerontius
+	name = "Maximus"
+	dna = bookmark_usurper_maximus_hispania
+	religion="nicene"
+	culture="britano_roman"
+	trait = education_martial_2
+	father = gerontius_generel #magister militum of usurper constantinus
+	390.1.1 = {
+		birth = yes
+	}
+	409.8.31 = {
+		effect = {
+			add_unpressed_claim = title:k_septem_provinciae
+			add_unpressed_claim = title:k_gallia
+			add_unpressed_claim = title:e_western_roman_empire
+			create_alliance = { 
+				target = character:gerontius_generel
+				allied_through_owner = character:usurper_maximus_hispania
+				allied_through_target = character:gerontius_generel
+			}
+		}
+	}
+	422.1.1 = {
+		death = {
+			death_reason = death_execution
+			killer = 145227 #Honorius Augustus
+		}
+	}
+}
+
+
+#theodosian_015 = { ##mainmod character edited in roman.txt ###Bookmark character
+#	name = "Theodosius"
+#	culture = "roman"
+#	religion = "nicene"
+#	dna = bookmark_empire_theodosius_the_second #Edited
+#	dynasty = 1022191 #Theodosian
+#	father = 70519 #Arcadius
+#	mother = 930551279 #Aelia Eudoxia
+#	401.4.10 = {
+#		birth = yes
+#	}
+#	421.1.1 = {
+#		add_spouse = theodosian_017 #Eudoxia
+#	}
+#	450.7.28 = {
+#		death = yes
+#	}
+#}
+
+#900062 = { #Romagna ##mainmod character edited in roman.txt
+#	name= "Flavius"
+#	male = yes
+#	dynasty=410
+#	dna = flavius_stilicho
+#	religion="nicene"
+#	culture="roman"
+#	trait = brave
+#	trait = ambitious
+#	trait = gregacious
+#	359.1.1 = {
+#		birth = yes
+#		effect = {
+#			add_character_flag = has_scripted_appearance
+#		}
+#	}
+#	384.1.1 = {
+#		add_spouse = 900065
+#	}
+#	408.8.22 = { #Edited
+#		death = {
+#			death_reason = death_murder
+#			killer = 409ce0003 #Olympius 
+#		}
+#	}
+#}
+
+heraclianus_usurper  = { #Heraclianus the Usurper of Africa ###Bookmark character
+	name = "Heraclianus"
+	religion ="nicene"
+	culture ="roman"
+	dynasty = dynn_tripolitania
+	dna = bookmark_usurper_heraclianus
+	trait = ambitious
+	370.5.1 = {
+		birth = yes
+	}
+	409.1.1 = {
+		add_unpressed_claim = title:k_africae
+		add_unpressed_claim = title:e_western_roman_empire
+	}
+	413.3.7 = {
+		death = {
+			death_reason = death_murder
+			killer = 145227 #Honorius Augustus
+		}
+	}
+}
+
+##########Edited in vandal.txt
+# vandals_002 = {
+# 	name = "Gunderic"
+# 	dynasty = hasding #Hasding
+# 	religion = "arianism"
+# 	culture = "vandal"
+# 	father = vandals_001 #Godigisel
+# 	trait = ambitious
+# 	trait = wrathfull
+# 	trait = ambitious
+# 	trait = brave
+# 	379.1.1 = {
+# 		birth = yes
+# 	}
+# 	409.8.31 = { #Edited
+# 		effect = {
+# 			create_alliance = { 
+# 				target = character:usurper_maximus_hispania
+# 				allied_through_owner = character:vandals_002
+# 				allied_through_target = character:usurper_maximus_hispania
+# 			}
+# 		}
+# 	}
+# 	428.1.1 = {
+# 		death = {
+# 			death_reason = death_battle
+# 		}
+# 	}
+# }
+
+priscus_attalus_usurper = { #Priscus the Usurper Proclaimed by Alaric ###Bookmark character
+	name = "Priscus"
+	religion="hellenic_pagan"
+	culture="roman"
+	dynasty = attalus
+	dna = bookmark_usurper_attalus
+	376.1.1= {
+		birth = yes
+	}
+	409.6.1= {
+		add_unpressed_claim = title:e_western_roman_empire
+	}
+	409.7.1 = {
+		create_alliance = { 
+			target = character:999103
+			allied_through_owner = character:priscus_attalus_usurper
+			allied_through_target = character:999103
+		}
+	}
+	416.12.1= {
+		death = yes
+	}
+}
+
+# 999103 = { #King Alaric of Visigoths, mainmod character in gothic.txt ###Bookmark character
+# 	name = "Alaric"
+# 	dna = bookmark_barbarian_alaric
+# 	dynasty = 99991000
+# 	religion = "arianism"
+# 	culture = "gothic"
+# 	father = 200292 #Rothestes
+# 	martial = 18
+# 	diplomacy = 10
+# 	intrigue = 9
+# 	stewardship = 15
+# 	trait = brave
+# 	trait = diligent
+# 	trait = vengeful
+# 	sexuality = heterosexual
+# 	375.1.1 = {
+# 		birth = yes
+# 		effect = {
+# 			add_character_flag = has_scripted_appearance
+# 		}
+# 	}
+# 	388.1.1 = {
+# 		add_spouse = 200294
+# 	}
+# 	409.6.1 = { #Edited
+# 		effect = {
+# 			add_hook = {
+# 				target = character:priscus_attalus_usurper
+# 				type = life_threat_hook
+# 			}
+# 		}
+# 	}
+# 	410.1.1 = {
+# 		death = yes
+# 		trait = adventurer
+# 	}
+# }
+
+409ce001 = { #Maria Stilicho #Historical
+	name= "Maria"
+	female = yes
+	dynasty = 1022191
+	religion="nicene"
+	culture="roman"
+	father = 900062 #Stilicho
+	mother = 900065
+	387.1.1 = {
+		birth = yes
+	}
+	398.2.1 = {
+		add_spouse = 145227
+	}
+	407.1.1 = {
+		death = yes
+	}
+}
+
+409ce002 = { #Thermantia Stilicho #Historical
+	name= "Thermantia"
+	female = yes
+	dynasty = 1022191
+	religion="nicene"
+	culture="roman"
+	father = 900062 #Stilicho
+	mother = 900065
+	390.1.1 = {
+		birth = yes
+	}
+	408.1.1 = {
+		add_spouse = 145227
+	}
+	408.8.24 = {
+		remove_spouse = 145227
+	}
+	415.1.1 = {
+		death = yes
+	}
+}
+
+409ce0003 = { #Olympius who killed stilicho #Historical
+	name = "Olympius"
+	religion="nicene"
+	culture="roman"
+	360.1.1 = {
+		birth = yes
+	}
+	411.1.1 = {
+		death = yes
+	}
+}
+
+409ce005 ={ #Sebastian and Jovinus's father
+	name = "Septimius"
+	religion="nicene"
+	culture="gallo_roman"
+	dynasty = dynn_jovinus
+	352.7.1= {
+		birth = yes
+	}
+	406.12.31= {
+		death = {
+			death_reason = death_murder
+		}
+	}
+}
+
+jovinus_the_usurper = { #Jovinus, a Gallo-Roman senator and claimed to be Roman Emperor (411–413 AD). ###Bookmark character
+	name = "Jovinus"
+	religion = "nicene"
+	culture = "gallo_roman"
+	dynasty = dynn_jovinus
+	trait = education_dioplomacy_3
+	dna = bookmark_usurper_jovinus
+	father = 409ce005
+	380.5.1 = {
+		birth = yes
+	}
+	409.6.1 = {
+		add_unpressed_claim = title:e_western_roman_empire
+		add_unpressed_claim = title:k_gallia
+	}
+	409.8.1 = {
+		effect = {
+			create_alliance = { 
+				target = character:409ce006
+				allied_through_owner = character:jovinus_the_usurper
+				allied_through_target = character:409ce006
+			}
+		}
+	}
+	413.12.1 = {
+		death = {
+			death_reason = death_execution
+			killer = 145227 # Flavius Honorius Augustus
+		}
+	}
+}
+
+409ce006 = { #Sebastian, Jovinus's brother and co-emperor
+	name = "Sebastian"
+	religion = "nicene"
+	culture = "gallo_roman"
+	dynasty = dynn_jovinus
+	father = 409ce005
+	383.5.1 = {
+		birth = yes
+	}
+	413.12.1 = {
+		death = {
+			death_reason = death_execution
+			killer = 145227 # Flavius Honorius Augustus
+		}
+	}
+}
+
+409ce007 = {
+	name = "Edobich"
+	religion = "nicene"
+	culture = "frankish"
+	380.1.1 = {
+		birth = yes
+	}
+	411.9.10 = {
+		death = yes
+	}
+}
+
+409ce008 = {
+	name = "Apollinaris"
+	religion = "nicene"
+	culture = "gallo_roman"
+	381.1.1 = {
+		birth = yes
+	}
+	411.9.10 = {
+		death = yes
+	}
+}
+
+# alan_12 = { ##in alan.txt Goar (born before 390, died between 446 and 450) was a leader of the Alans in 5th-century Gaul. Around the time that the Vandals and other Alans under Respendial crossed the Rhine in 405 or 406, Goar's band of Alans quickly joined the Romans, and subsequently played a role in the internal politics of Gaul.
+# 	name = "Goar"
+# 	religion = "scythian_pagan"
+# 	culture = "alan"
+# 	372.1.1 = {
+# 		birth = yes
+# 	}
+# 	441.1.1 = {
+# 		religion = nicene
+# 	}
+# 	451.1.1 = {
+# 		death = yes
+# 	}
+# }
+
+# alan_01 = { ##in alan.txt Respendial or Respindal was king of a group of Alans in western Europe in the early 5th century CE. After the Crossing of the Rhine in 405 or 406, Respendial's Alans invaded the Roman Empire. The other group of Alans was led by Goar, who joined the Romans.
+# 	name = "Respendial"
+# 	dna = 999503_respendial
+# 	dynasty = 99995001
+# 	religion = "scythian_pagan"
+# 	culture = "alan"
+# 	365.1.1 = {
+# 		birth = yes
+# 	}
+# 	384.1.1 = {
+# 		add_spouse = 999502
+# 	}
+# 	415.1.1 = {
+# 		death = yes
+# 	}
+# }
+
+# 999600 = { #in Suebian.txt, Hermeric (died 441) was the king of the Suevi from at least 419 and possibly as early as 406 until his abdication in 438.
+# 	name = "Hermeric"
+# 	dna = 999600_hermeric
+# 	dynasty = 99996000
+# 	religion = "norse_pagan"
+# 	culture = "swabian"
+# 	375.1.1 = {
+# 		birth = yes
+# 	}
+# 	441.1.1 = {
+# 		death = yes
+# 	}
+# }
+
+##PLACEHOLDER CHARACTERS
+409cep01 = {
+	name = "Sebastian"
+	religion = "nicene"
+	culture = "roman"
+	383.5.1 = {
+		birth = yes
+	}
+	420.12.1 = {
+		death = yes
+		}
+}
+409cep02 = {
+	name = "Maximus"
+	religion = "nicene"
+	culture = "roman"
+	380.1.1 = {
+		birth = yes
+	}
+	420.12.1 = {
+		death = yes
+		}
+}
+409cep03 = {
+	name = "Julianus"
+	religion = "nicene"
+	culture = "roman"
+	375.1.1 = {
+		birth = yes
+	}
+	420.12.1 = {
+		death = yes
+	}
+}
+409cep04 = {
+	name = "Constantine"
+	religion = "nicene"
+	culture = "roman"
+	370.1.1 = {
+		birth = yes
+	}
+	420.12.1 = {
+		death = yes
+	}	
+}
+409cep05 = {
+	name = "Constantine"
+	religion = "nicene"
+	culture = "roman"
+	360.1.1 = {
+		birth = yes
+	}
+	420.12.1 = {
+		death = yes
+	}	
+}
+409cep06 = {
+	name = "Flavius"
+	religion = "nicene"
+	culture = "roman"
+	380.1.1 = {
+		birth = yes
+	}
+	420.12.1 = {
+		death = yes
+	}	
+}
+409cep07 = {
+	name = "Sebastian"
+	religion = "nicene"
+	culture = "gallo_roman"
+	380.1.1 = {
+		birth = yes
+	}
+	420.12.1 = {
+		death = yes
+	}	
+}
+409cep08 = {
+	name = "Arcadius"
+	religion = "nicene"
+	culture = "gallo_roman"
+	380.1.1 = {
+		birth = yes
+	}
+	420.12.1 = {
+		death = yes
+	}	
+}
+409cep09 = {
+	name = "Priscus"
+	religion = "nicene"
+	culture = "gallo_roman"
+	380.1.1 = {
+		birth = yes
+	}
+	420.12.1 = {
+		death = yes
+	}	
+}
+409cep10 = {
+	name = "Flavius"
+	religion = "nicene"
+	culture = "hispano_roman"
+	380.1.1 = {
+		birth = yes
+	}
+	420.12.1 = {
+		death = yes
+	}	
+}
+409cep11 = {
+	name = "Leo"
+	religion = "nicene"
+	culture = "hispano_roman"
+	380.1.1 = {
+		birth = yes
+	}
+	420.12.1 = {
+		death = yes
+	}	
+}
+
+409cep50 = { 
+	name = "Atax"
+	religion = "scythian_pagan"
+	culture = "alan"
+	380.1.1 = {
+		birth = yes
+	}
+	450.1.1 = {
+		death = yes
+	}
+}
+
+409cep51 = { 
+	name = "Guram"
+	religion = "scythian_pagan"
+	culture = "alan"
+	385.1.1 = {
+		birth = yes
+	}
+	450.1.1 = {
+		death = yes
+	}
+}
+
+409cep52 = {
+	name = "Addak"
+	religion = "tengri_pagan"
+	culture = "alan"
+	385.1.1 = {
+		birth = yes
+	}
+	390.1.1 = {
+		religion = "arianism"
+	}
+	418.1.1 = {
+		death = {
+			death_reason = death_battle
+		}
+	}
+}
+
+
+
+
+
+
