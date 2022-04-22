@@ -609,3 +609,37 @@ c_berchtesgaden = {
 	}
 }
 
+d_bacs = {
+	406.1.1 = {
+		holder = 409cep53
+		liege = e_hunnic_empire
+	}
+}
+
+d_ungvar = {
+	399.1.1 = {
+		liege = e_hunnic_empire
+	}
+}
+d_rugians = {
+	399.1.1 = {
+		liege = e_hunnic_empire
+	}
+}
+d_transcarpathia = {
+	399.1.1 = {
+		liege = e_hunnic_empire
+	}
+}
+d_cherven_cities = {
+	400.1.1 = {
+		holder = 900027
+		liege = e_hunnic_empire
+	}
+}
+d_halych = {
+	400.1.1 = {
+		holder = 900027
+		liege = e_hunnic_empire
+	}
+}

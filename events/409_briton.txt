@@ -22,7 +22,7 @@ namespace = 409_briton
 
 	option = {
 		name = "d409_briton.1.a" ##Stand with Britain
-		ai_chance = 45
+		ai_chance = 30
 		title:k_britannia.holder = {
 			remove_short_term_gold = 250
 		}
@@ -132,7 +132,7 @@ namespace = 409_briton
 
 	option = {
 		name = "d409_briton.1.c" ##Free Britain
-		ai_chance = 45
+		ai_chance = 60
 		custom_tooltip = "d409_briton.1.c.tt"
 
 		title:d_york.holder = {
@@ -211,28 +211,171 @@ namespace = 409_briton
 			}
 		}
 
-		random_list = {
-			15 = {
-				title:k_saxony.holder = {
-					trigger_event = {
-						id = briton.0007
-						days = 30
+		hidden_effect = {
+			title:c_cardiganshire = {
+				set_de_jure_liege_title = title:d_gwynedd
+			}
+			title:c_merioneth = {
+				set_de_jure_liege_title = title:d_gwynedd
+			}
+			title:c_caernarfonshire = {
+				set_de_jure_liege_title = title:d_gwynedd
+			}
+			title:c_anglesey = {
+				set_de_jure_liege_title = title:d_gwynedd
+			}
+			title:c_denbighshire = {
+				set_de_jure_liege_title = title:d_gwynedd
+			}
+
+
+			title:c_maldwyn = {
+				set_de_jure_liege_title = title:d_powys
+			}
+			title:c_sir_faesyfed = {
+				set_de_jure_liege_title = title:d_powys
+			}
+			title:c_hereford = {
+				set_de_jure_liege_title = title:d_powys
+			}
+
+
+			title:c_carmarthenshire = {
+				set_de_jure_liege_title = title:d_deheubarth
+			}
+			title:c_pembrokeshire = {
+				set_de_jure_liege_title = title:d_deheubarth
+			}
+			title:c_glamorgan = {
+				set_de_jure_liege_title = title:d_deheubarth
+			}
+			title:c_monmouthshire = {
+				set_de_jure_liege_title = title:d_deheubarth
+			}
+			title:c_brecknockshire = {
+				set_de_jure_liege_title = title:d_deheubarth
+			}
+
+			title:d_deheubarth = {
+				set_de_jure_liege_title = title:k_england
+			}
+			title:d_powys = {
+				set_de_jure_liege_title = title:k_england
+			}
+			title:d_gwynedd = {
+				set_de_jure_liege_title = title:k_england
+			}
+
+			title:c_lancashire = {
+				set_de_jure_liege_title = title:d_lancaster
+			}
+			title:c_westmorland = {
+				set_de_jure_liege_title = title:d_lancaster
+			}
+			title:c_cheshire = {
+				set_de_jure_liege_title = title:d_lancaster
+			}
+			title:c_derby = {
+				set_de_jure_liege_title = title:d_lancaster
+			}
+
+			title:c_norfolk = {
+				set_de_jure_liege_title = title:d_norfolk
+			}
+			title:c_suffolk = {
+				set_de_jure_liege_title = title:d_norfolk
+			}
+			title:c_cambridgeshire = {
+				set_de_jure_liege_title = title:d_norfolk
+			}
+
+			title:c_kent = {
+				set_de_jure_liege_title = title:d_canterbury
+			}
+			title:c_surrey = {
+				set_de_jure_liege_title = title:d_canterbury
+			}
+			title:c_surrey = {
+				set_de_jure_liege_title = title:d_canterbury
+			}
+			title:c_sussex = {
+				set_de_jure_liege_title = title:d_canterbury
+			}
+
+			title:c_hampton = {
+				set_de_jure_liege_title = title:d_somerset
+			}
+			title:c_isle_of_wight = {
+				set_de_jure_liege_title = title:d_somerset
+			}
+			title:c_dorset = {
+				set_de_jure_liege_title = title:d_somerset
+			}
+			title:c_somerset = {
+				set_de_jure_liege_title = title:d_somerset
+			}
+
+			title:c_devon = {
+				set_de_jure_liege_title = title:d_cornwall
+			}
+			title:c_cornwall = {
+				set_de_jure_liege_title = title:d_cornwall
+			}
+			title:c_cornwall = {
+				set_de_jure_liege_title = title:d_cornwall
+			}
+
+			title:c_durham = {
+				set_de_jure_liege_title = title:d_northumberland
+			}
+			title:c_cumberland = {
+				set_de_jure_liege_title = title:d_northumberland
+			}
+			title:c_lincolnshire = {
+				set_de_jure_liege_title = title:d_york
+			}
+			title:c_nottinghamshire = {
+				set_de_jure_liege_title = title:d_hereford
+			}
+
+			title:d_york = {
+				set_de_jure_liege_title = title:k_england
+			}
+			title:d_northumberland = {
+				set_de_jure_liege_title = title:k_england
+			}
+			title:d_hereford = {
+				set_de_jure_liege_title = title:k_england
+			}
+			title:d_bedford = {
+				set_de_jure_liege_title = title:k_england
+			}
+			title:d_gloucester = {
+				set_de_jure_liege_title = title:k_england
+			}
+			random_list = {
+				15 = {
+					title:k_saxony.holder = {
+						trigger_event = {
+							id = briton.0007
+							days = 30
+						}
 					}
 				}
-			}
-			15 = {
-				title:k_frisia.holder = {
-					trigger_event = {
-						id = briton.0007
-						days = 30
+				15 = {
+					title:k_frisia.holder = {
+						trigger_event = {
+							id = briton.0007
+							days = 30
+						}
 					}
 				}
-			}
-			15 = {
-				title:k_jutland.holder = {
-					trigger_event = {
-						id = briton.0007
-						days = 30
+				15 = {
+					title:k_jutland.holder = {
+						trigger_event = {
+							id = briton.0007
+							days = 30
+						}
 					}
 				}
 			}

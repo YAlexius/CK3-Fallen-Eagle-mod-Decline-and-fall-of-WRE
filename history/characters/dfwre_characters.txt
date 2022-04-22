@@ -705,6 +705,23 @@ jovinus_the_usurper = { #Jovinus, a Gallo-Roman senator and claimed to be Roman 
 	}
 }
 
+409cep53 = {
+	name = "Addak"
+	religion = "tengri_pagan"
+	culture = "alan"
+	385.1.1 = {
+		birth = yes
+	}
+	390.1.1 = {
+		religion = "arianism"
+	}
+	418.1.1 = {
+		death = {
+			death_reason = death_battle
+		}
+	}
+}
+
 
 
 
